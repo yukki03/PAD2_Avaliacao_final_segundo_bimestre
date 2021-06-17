@@ -1,0 +1,6 @@
+var result = someFn(
+       {somePropery: 'interview'},
+        function(value)
+       {console.log(`This pointing to ${value}`);}
+                   );
+console.log('Result is ', result);
