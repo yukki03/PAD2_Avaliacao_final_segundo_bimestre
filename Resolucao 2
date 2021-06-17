@@ -1,0 +1,14 @@
+var someFn = function(numero) 
+    {
+        var somar = numero;
+        return function (incremento) 
+     {
+         somar += incremento;
+         return somar;
+     }
+    }
+
+    var counter  = someFn(1)
+    console.log("First call", counter(3))
+    console.log("Second call", counter(1))
+    console.log("Third call", counter(5))
